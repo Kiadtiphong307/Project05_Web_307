@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Noto+Sans+Thai:wght@500&display=swap');
+
+
+/*main html*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 5px;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+body{
+    background-image: linear-gradient( 135deg, #FFD3A5 10%, #FD6585 100%);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*tlile_name*/
+.title_top{
+    text-align: center;
+    padding: 20px;;
+    font-size: 50px;
+    background-image: linear-gradient( 135deg, #79F1A4 10%, #0E5CAD 100%);
+    width: 400px;
+    height: 110px;
+    place-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 50px;
+    position: sticky;
+}
+.title_top:hover{
+    box-shadow: 0 3px 6px rgb(0, 0, 0.16),
+    0 3px 6px rgb(0, 0, 0.23);
+    transform:translate(0px, -8px) ;
+    transition: 0.4s;
+    padding: 10px;
+    border: 1px solid var(--text--color);
+
+}
+.explain_detail{
+    font-size: 16px;
+    padding: 5px;
+    margin: 5px;
+    width: 380px;
+    height: 116px ;
+
+}
+
+.title_welcome{
+    text-align: center;
+    padding: 10px;
+    padding-top: 40px;
+    font-size: 60px;
+}
+
+/*main_contrainer*/
+
+.contrainer_all{
+    position: static;
+    margin: 2rem;   
+    width: 86rem;
+    height: 120rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 50px;
+}
+
+
+.box_item{
+    background-color: #DCDCDC;
+    width: 25rem;
+    height: 35rem;
+    margin: 25px;
+    margin-top: 20px;
+    border-radius: 50px;
+    box-shadow: 0 10px 10px rgb(27, 26, 26),
+    0 10px 10px rgb(0, 0, 0);
+    text-align: center;
+
+}
+
+.box_item:hover{
+    box-shadow: 0 3px 6px rgb(0, 0, 0.16),
+    0 3px 6px rgb(0, 0, 0.23);
+    transform:translate(0px, -8px) ;
+    background-image: linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
+    transition: 0.4s;
+    padding: 5px;
+    border: 1px solid var(--text--color);
+    
+}
+
+
+/*img_contrainer*/
+.img_product{
+    height: 15rem;
+    width: 10rem;
+    place-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+.cost_font{
+    font-size: 25px;
+}
+.product_item{
+    font-size: 30px;
+}
+.icon_bag{
+    font-size: 50px;
+    float: right;
+}
+
+.buy_color{
+    text-align: center;
+    justify-content: center;
+    place-content: center;
+    font-size: 24px;
+    border: 0;
+    width: 10rem;
+    margin: 10px ;
+    border-radius: 50px;
+    background-image: linear-gradient(135deg, #FD6E6A 10%, #FFC600 100%);
+    color: #1B2631;
+    margin-top: 10%;
+}
+
+
+
+
+button:hover{
+    background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
+    color: white;
+}
+
+
+
+.contrainer_slider {
+    overflow: hidden;
+    width: 1400px;
+    height: 500px;
+    margin: 0;
+    place-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+
+.slide_img {
+    display: none;
+  } 
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+/*detal_buy*/
+.title_buy{
+    font-size: 32px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.form_address{
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+}
+
+
+
+/*detal_user*/
+.contrainer_controll_detail{
+
+    margin: 20px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 16px;
+
+}
+.contrainer_user, .contrainer_order{
+    background-color: #DCDCDC;
+    border: 5px solid rgb(70, 53, 53);
+    margin: 30px;
+    border-radius: 50px;
+    width: 80rem;
+    text-align: center;
+    font-size: 16px;
+}
+
+.contrainer_user textarea{
+    width: 500px;
+    height: 100px;
+}
+
+
+.contrainer_controll_detail .title_buy{
+    background-image: linear-gradient( 135deg, #79F1A4 10%, #0E5CAD 100%);
+    margin-left: auto;
+    margin-right:auto;
+    width: 300px;
+    border-radius: 50px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.selected_products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.selected_product {
+    width: 250px; /* ปรับขนาดของสินค้าตามที่คุณต้องการ */
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    text-align: center;
+    position: relative;
+}
+
+.selected_product img {
+    max-width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+.selected_product h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.selected_product p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.quantity button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0 10px;
+}
+
+.price {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+
+.contrainer_value{
+    margin-top: 50px;
+    margin: auto;
+    background-image: linear-gradient(135deg, #FD6E6A 10%, #FFC600 100%);
+    border-radius: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center  ;
+
+
+}
+
+
+.ex_all_product,.re_sell_all,.sp_sell_all{
+    width: 100%;
+    display: block;
+    padding: auto;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.submit_bottom,.canel_bottom{
+    text-align: center;
+    justify-content: center;
+    place-content: center;
+    font-size: 24px;
+    border: 0;
+    width: 10rem;
+    margin: 10px ;
+    border-radius: 50px;
+    background-image: linear-gradient(135deg, #FD6E6A 10%, #FFC600 100%);
+    color: #1B2631;
+}
+
+.submit_bottom:hover,.canel_bottom:hover{
+    background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
+    color: white;
+    box-shadow: 0 3px 6px rgb(0, 0, 0.16),
+    0 3px 6px rgb(0, 0, 0.23);
+    transform:translate(0px, -8px);
+    transition: 0.4s;
+    padding: 5px;
+    border: 1px solid var(--text--color);
+    
+}
